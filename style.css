@@ -1,0 +1,277 @@
+/* -------------------- General Styling -------------------- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: #f8f6ff;
+    color: #333;
+    scroll-behavior: smooth;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+h1, h2, h3, h4 {
+    margin-bottom: 10px;
+}
+
+/* -------------------- Home Section -------------------- */
+.home {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: linear-gradient(to right, #a1c4fd, #c2e9fb);
+    padding: 0 20px;
+}
+
+.profile-photo {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid #fff;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    transition: transform 0.3s ease;
+}
+
+.profile-photo:hover {
+    transform: scale(1.1) rotate(5deg);
+}
+
+.home h1 {
+    font-size: 2.5rem;
+    margin-top: 15px;
+}
+
+.home h3 {
+    color: #555;
+    margin-bottom: 15px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    gap: 20px;
+}
+
+.nav-links li a {
+    padding: 8px 15px;
+    border-radius: 5px;
+    background: #fff;
+    color: #333;
+    font-weight: 500;
+    transition: 0.3s ease;
+}
+
+.nav-links li a:hover {
+    background: #4f46e5;
+    color: #fff;
+    transform: translateY(-3px);
+}
+
+/* -------------------- Section Titles -------------------- */
+section h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 2rem;
+    color: #4f46e5;
+}
+
+/* -------------------- About Section -------------------- */
+.about {
+    max-width: 900px;
+    margin: 50px auto;
+    padding: 0 20px;
+    line-height: 1.8;
+    font-size: 1.1rem;
+}
+
+.about p {
+    margin-bottom: 20px;
+}
+/* -------------------- Education Section -------------------- */
+.education {
+    max-width: 1000px;
+    margin: 50px auto;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.education h2 {
+    font-size: 2rem;
+    color: #4f46e5;
+    margin-bottom: 40px;
+}
+
+/* Education Cards */
+.edu-box {
+    background: hsl(0, 87%, 31%);
+    padding: 25px 20px;
+    margin-bottom: 30px;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: left;
+}
+
+/* Hover effect */
+.edu-box:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 30px rgba(79,70,229,0.2);
+}
+
+/* Headings inside edu-box */
+.edu-box h3 {
+    font-size: 1.5rem;
+    color: #4f46e5;
+    margin-bottom: 10px;
+}
+
+/* Paragraphs inside edu-box */
+.edu-box p {
+    font-size: 1rem;
+    color: #333;
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
+
+/* Highlight strong text */
+.edu-box strong {
+    color: #4f46e5;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .edu-box {
+        padding: 20px;
+    }
+    .education h2 {
+        font-size: 1.8rem;
+    }
+}
+
+
+/* -------------------- Projects Section -------------------- */
+.projects {
+    max-width: 1000px;
+    margin: 50px auto;
+    padding: 0 20px;
+}
+
+.project-container, .project-card {
+    background: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 12px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-container:hover, .project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+.project-container .btn {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 8px 15px;
+    background: #4f46e5;
+    color: #fff;
+    border-radius: 5px;
+    transition: 0.3s ease;
+}
+
+.project-container .btn:hover {
+    background: #6366f1;
+    transform: translateY(-2px);
+}
+
+/* -------------------- Skills Section -------------------- */
+.skills {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 0 20px;
+}
+
+.skill-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.skill {
+    background: #fff;
+    padding: 15px 25px;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, background 0.3s ease;
+    cursor: default;
+}
+
+.skill:hover {
+    transform: translateY(-5px);
+    background: #4f46e5;
+    color: #fff;
+}
+
+/* -------------------- Contact Section -------------------- */
+.contact {
+    text-align: center;
+    padding: 50px 20px;
+    background: rgb(255, 192, 226);
+}
+
+.contact h4 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.social-links a {
+    margin: 0 10px;
+    display: inline-block;
+    transition: transform 0.3s ease;
+}
+
+.social-links a:hover {
+    transform: scale(1.2) rotate(-10deg);
+}
+
+/* -------------------- Footer -------------------- */
+.footer {
+    text-align: center;
+    padding: 20px 0;
+    background: #4f46e5;
+    color: #fff;
+    margin-top: 50px;
+}
+
+/* -------------------- Responsive -------------------- */
+@media (max-width: 768px) {
+    .nav-links {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .skill-list {
+        flex-direction: column;
+    }
+    .profile-photo {
+        width: 120px;
+        height: 120px;
+    }
+}
